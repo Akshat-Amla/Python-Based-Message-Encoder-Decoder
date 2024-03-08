@@ -1,67 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message Encode and Decode - Readme</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 20px;
-        }
-        h1, h2, h3, p, code {
-            margin-bottom: 10px;
-        }
-        code {
-            background-color: #f4f4f4;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-family: 'Courier New', monospace;
-        }
-        .code-container {
-            background-color: #f8f8f8;
-            padding: 10px;
-            border-radius: 8px;
-        }
-    </style>
-</head>
-<body>
+# Message Encode and Decode Application
 
-    <h1>Message Encode and Decode</h1>
+## Project Description
 
-    <h2>Program Description</h2>
-    <p>
-        This Python program provides a simple GUI for encoding and decoding messages using a key.
-    </p>
+This is a Python application that provides a graphical user interface (GUI) for encoding and decoding messages using a specified key. The application uses the Tkinter library for the GUI and incorporates base64 encoding for secure message manipulation.
 
-    <h2>Program Flow</h2>
-    <p>
-        The program uses the Tkinter library to create a graphical user interface. It allows the user to input a message, key, and choose between encoding and decoding modes. The encoded or decoded result is displayed in the GUI.
-    </p>
-    <div class="code-container">
-        <code>
-            # Importing Modules<br>
-            # Initializing Window<br>
-            # Defining Encode and Decode Functions<br>
-            # Setting Mode<br>
-            # Creating Labels, Entries, and Buttons<br>
-            # Handling Encode, Decode, Reset, and Exit<br>
-            # Running Tkinter Mainloop<br>
-        </code>
-    </div>
+## Technologies Used
 
-    <h2>Tech Stack and Libraries Used</h2>
-    <p>
-        This program is written in Python and utilizes the Tkinter library for creating the graphical user interface.
-    </p>
-    <div class="code-container">
-        <code>
-            # Python<br>
-            # Tkinter<br>
-            # Base64<br>
-        </code>
-    </div>
+- **Python 3.x:** The core programming language used for building the application.
+- **Tkinter:** A standard GUI (Graphical User Interface) toolkit for Python that provides easy-to-use interfaces for desktop applications.
+- **base64:** Used for secure encoding and decoding of messages.
 
-</body>
-</html>
+## Libraries Used
 
+### Tkinter
+
+Tkinter is the standard Python interface to the Tk GUI toolkit. It is widely used for creating desktop applications with graphical interfaces.
+
+### base64
+
+The `base64` library provides functions to encode and decode data using the base64 encoding scheme. In this project, it ensures secure encoding of messages.
+
+## Features
+
+- User-friendly GUI
+- Encode and decode functionality
+- Secure encoding using base64 encoding
+- Easy-to-understand interface for key and mode selection
+
+## How I Built This
+
+### GUI Design
+
+The GUI was designed using Tkinter, taking advantage of its simplicity and ease of use. The layout includes input fields for the message and key, a mode selection field, and buttons for encoding, decoding, resetting, and exiting.
+
+### Encoding and Decoding Logic
+
+The encoding and decoding functions were implemented with a simple algorithm that manipulates the characters of the message based on the provided key. The use of base64 encoding ensures secure data manipulation.
+
+### User Interaction
+
+The application allows users to input the message, key, and select the mode (encode or decode). The result is displayed in the GUI, providing a seamless user experience.
